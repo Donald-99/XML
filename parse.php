@@ -2,7 +2,7 @@
 
 $xml = simplexml_load_file("dataset.xml") or die("cant load xml");
 
-//echo dashes(79)."\n";
+echo dashes(79)."\n";
 foreach($xml as $records)
 {
     // echo"<pre>";
@@ -14,7 +14,7 @@ foreach($xml as $records)
     ".$records->detailsData->skuID." | ".$records->detailsData->skuName." | ".$records->detailsData->stateOfArticle." | ".$records->detailsData->umSAPprice." | ".$records->detailsData->volume." | ".$records->detailsData->weight." |\n") ;
 
     echo $row;
- }
+}
 
 echo dashes(79)."\n";
 
